@@ -1,0 +1,23 @@
+@import 'common';
+
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include mq(mobile) {
+    width: 425px;
+  }
+
+  @include mq(tablet) {
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 768px;
+  }
+
+  @include mq(desktop) {
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 1280px;
+  }
+}

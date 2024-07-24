@@ -1,0 +1,44 @@
+@use './mixins';
+// @import 'fonts';
+@import 'reset';
+@import 'container';
+@import 'common';
+
+:root {
+  --main-color: #ffffff;
+  --accent-color: #017683;
+  --accent-color-first: #f2616e;
+  --accent-color-second: #ac4493;
+  --accent-color-third: #f99523;
+
+  --background-color: #f5f5f5;
+  --add-background-color: #f6f9f9;
+
+  --border-color: #f0f0f0;
+
+  --btn-text-color: #f5f5f5;
+  --background-btn-second-color: #3fc2d2;
+
+  --text-color: #212121;
+  --second-text-color: #414141;
+  --table-line-color: #cccbcb;
+
+  --transition-duration: 300ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --hover-selected_btn-color: #f0f1f3;
+  --hover-active-color: #212121;
+  --hover-btn-text: #000000;
+  --hover-text-shadow: 0 5px 10px var(--text-color),
+    0 30px 50px var(--btn-border-color);
+  --hover-box-shadow: rgb(0, 158, 197, 0.35) 0px 5px 15px;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: 'Open Sans', sans-serif;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
