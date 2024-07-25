@@ -25,8 +25,6 @@ const useSocket = () => {
 
         subscriptions.forEach((event) => {
           socketRef.current.on(event, (data) => {
-            console.log(`Received ${event}: `, data);
-
             if (
               event === "transcriber-ready" &&
               data === "Transcriber is ready"
